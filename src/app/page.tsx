@@ -15,9 +15,6 @@ export default function Home() {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
               <a href="#experience">Experience</a>
             </li>
             <li>
@@ -32,12 +29,13 @@ export default function Home() {
           <div className="hero-content flex-col lg:flex-row">
             <Image
               src={ProfileImg}
+              priority={true}
               alt="Profile Picture"
               className="max-w-xs sm:max-w-md rounded-lg shadow-2xl mt-24 md:mt-0"
             />
 
             <div className="sm:pl-12">
-              <h1 className="text-3xl sm:text-5xl font-bold text-center sm:text-start">
+              <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-center sm:text-start">
                 Hi, my name is Jeremy Euchi
               </h1>
               <p className="py-6 px-10 sm:px-0">
@@ -74,12 +72,12 @@ export default function Home() {
                 <a
                   href="https://www.tiktok.com/@jeremyeuchi"
                   target="_blank"
-                  className="btn btn-secondary"
+                  className="btn btn-circle bg-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 35 35"
-                    className="w-6 h-6"
+                    viewBox="0 0 29 35"
+                    className="w-5 h-7"
                   >
                     <path
                       d="M29.5248245,9.44576327 C28.0821306,9.0460898 26.7616408,8.29376327 25.6826204,7.25637551 C25.5109469,7.09719184 25.3493143,6.92821224 25.1928245,6.75433469 C23.9066204,5.27833469 23.209151,3.38037551 23.2336408,1.42290612 L17.3560898,1.42290612 L17.3560898,23.7086204 C17.3560898,27.7935184 15.1520082,29.9535184 12.416498,29.9535184 C11.694049,29.9611102 10.9789469,29.8107429 10.3213959,29.5124571 C9.6636,29.2144163 9.07951837,28.7758041 8.60955918,28.2272327 C8.1398449,27.6789061 7.79551837,27.0340898 7.60180408,26.3385796 C7.4078449,25.6430694 7.36890612,24.9132735 7.48743673,24.2008653 C7.60596735,23.4884571 7.87902857,22.8105796 8.28751837,22.2154776 C8.69625306,21.6198857 9.23037551,21.1212735 9.85241633,20.7546612 C10.474702,20.3878041 11.1694776,20.1617633 11.8882531,20.0924571 C12.6070286,20.023151 13.3324163,20.1122939 14.0129878,20.3535184 L14.0129878,14.3584163 C13.4889061,14.2430694 12.9530694,14.1862531 12.416498,14.1894367 L12.3917633,14.1894367 C10.2542939,14.1943347 8.16604898,14.8325388 6.39127347,16.0234776 C4.61649796,17.2149061 3.23429388,18.9051918 2.41976327,20.8812735 C1.60523265,22.8578449 1.39486531,25.0310694 1.8151102,27.1269061 C2.2351102,29.2227429 3.2671102,31.1469061 4.78033469,32.6564571 C6.29380408,34.1660082 8.22066122,35.1933551 10.3174776,35.6082122 C12.4142939,36.0230694 14.5870286,35.8073143 16.561151,34.9878857 C18.5355184,34.1682122 20.2226204,32.7820898 21.409151,31.0041306 C22.5959265,29.2264163 23.2289878,27.136702 23.228498,24.9992327 L23.228498,12.8155592 C25.5036,14.392702 28.2244163,15.134498 31.1289061,15.1886204 L31.1289061,9.68551837 C30.5869469,9.66568163 30.049151,9.5851102 29.5248245,9.44576327"
@@ -97,36 +95,52 @@ export default function Home() {
                       fill="#000000"
                     ></path>
                   </svg>
-                  TikTok
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/jeuchi/"
+                  target="_blank"
+                  className="btn btn-circle bg-[#0077B5]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    className="w-6 h-6 bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="experience" className="hero min-h-screen">
+        <div
+          id="experience"
+          className="hero min-h-screen scroll-mt-16 lg:scroll-mt-0"
+        >
           <div className="hero-content flex-col">
-            <h1 className="text-3xl sm:text-5xl font-bold">Experience</h1>
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold">
+              Experience
+            </h1>
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
               <li>
                 <div className="timeline-middle">
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white"
-                    aria-hidden="true"
+                    className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
                       fillRule="evenodd"
-                      d="M10 2a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v2.382l1.447.723.005.003.027.013.12.056c.108.05.272.123.486.212.429.177 1.056.416 1.834.655C7.481 13.524 9.63 14 12 14c2.372 0 4.52-.475 6.08-.956.78-.24 1.406-.478 1.835-.655a14.028 14.028 0 0 0 .606-.268l.027-.013.005-.002L22 11.381V9a3 3 0 0 0-3-3h-2V5a3 3 0 0 0-3-3h-4Zm5 4V5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1h6Zm6.447 7.894.553-.276V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-5.382l.553.276.002.002.004.002.013.006.041.02.151.07c.13.06.318.144.557.242.478.198 1.163.46 2.01.72C7.019 15.476 9.37 16 12 16c2.628 0 4.98-.525 6.67-1.044a22.95 22.95 0 0 0 2.01-.72 15.994 15.994 0 0 0 .707-.312l.041-.02.013-.006.004-.002.001-.001-.431-.866.432.865ZM12 10a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z"
                       clipRule="evenodd"
+                      d="M10 2a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v2.382l1.447.723.005.003.027.013.12.056c.108.05.272.123.486.212.429.177 1.056.416 1.834.655C7.481 13.524 9.63 14 12 14c2.372 0 4.52-.475 6.08-.956.78-.24 1.406-.478 1.835-.655a14.028 14.028 0 0 0 .606-.268l.027-.013.005-.002L22 11.381V9a3 3 0 0 0-3-3h-2V5a3 3 0 0 0-3-3h-4Zm5 4V5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1h6Zm6.447 7.894.553-.276V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-5.382l.553.276.002.002.004.002.013.006.041.02.151.07c.13.06.318.144.557.242.478.198 1.163.46 2.01.72C7.019 15.476 9.37 16 12 16c2.628 0 4.98-.525 6.67-1.044a22.95 22.95 0 0 0 2.01-.72 15.994 15.994 0 0 0 .707-.312l.041-.02.013-.006.004-.002.001-.001-.431-.866.432.865ZM12 10a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z"
                     />
                   </svg>
                 </div>
-                <div className="timeline-start mb-10 md:text-start">
+                <div className="timeline-start mt-2 mb-5 md:text-start">
                   <time className="font-mono italic">January 2021</time>
                   <div className="text-lg font-black">
                     Trimble - Firmware Engineer
@@ -146,14 +160,11 @@ export default function Home() {
                 <hr className="bg-secondary" />
               </li>
               <li>
-                <hr />
+                <hr className="bg-secondary" />
                 <div className="timeline-middle">
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white"
-                    aria-hidden="true"
+                    className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -166,7 +177,7 @@ export default function Home() {
                     <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z" />
                   </svg>
                 </div>
-                <div className="timeline-end mb-10">
+                <div className="timeline-end mt-2 mb-5">
                   <time className="font-mono italic">June 2021</time>
                   <div className="text-lg font-black">
                     University of California, Santa Cruz
@@ -177,14 +188,12 @@ export default function Home() {
                 <hr className="bg-secondary" />
               </li>
               <li>
-                <hr />
+                <hr className="bg-secondary" />
                 <div className="timeline-middle">
                   <svg
                     className="w-6 h-6 text-gray-800 dark:text-white"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -195,7 +204,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="timeline-start mb-10 md:text-start">
+                <div className="timeline-start mt-2 mb-5 md:text-start">
                   <time className="font-mono italic">May 2022</time>
                   <div className="text-lg font-black">
                     Protempis - Firmware Engineer
@@ -229,8 +238,6 @@ export default function Home() {
                     className="w-6 h-6 text-gray-800 dark:text-white"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -243,7 +250,7 @@ export default function Home() {
                     <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z" />
                   </svg>
                 </div>
-                <div className="timeline-end mb-10">
+                <div className="timeline-end mt-2">
                   <time className="font-mono italic">December 2024</time>
                   <div className="text-lg font-black">
                     University of California, Los Angeles
@@ -251,7 +258,7 @@ export default function Home() {
                   Graduated with a Master of Science in Electrical and Computer
                   Engineering
                 </div>
-                <hr />
+                <hr className="bg-secondary" />
               </li>
             </ul>
           </div>
@@ -259,7 +266,9 @@ export default function Home() {
 
         <div id="projects" className="hero min-h-screen">
           <div className="hero-content flex flex-col">
-            <h1 className="text-3xl sm:text-5xl font-bold">Projects</h1>
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold">
+              Projects
+            </h1>
             <div role="tablist" className="tabs tabs-lifted tabs-lg">
               <input
                 type="radio"
@@ -276,9 +285,8 @@ export default function Home() {
                 <Image
                   src={Khet}
                   alt="Khet"
-                  width={750}
-                  height={750}
-                  className="justify-self-center pb-6"
+                  priority={true}
+                  className="justify-self-center pb-6 w-[300px] h-[230px] sm:w-[750px] sm:h-[500px]"
                 />
 
                 <div className="flex flex-row gap-2">
@@ -291,8 +299,6 @@ export default function Home() {
                       className="w-6 h-6 text-gray-800 dark:text-white"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -342,9 +348,7 @@ export default function Home() {
                 <Image
                   src={TrafficWatch}
                   alt="TrafficWatch"
-                  width={500}
-                  height={500}
-                  className="justify-self-center pb-6"
+                  className="justify-self-center pb-6 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px]"
                 />
                 <div className="flex flex-row gap-2">
                   <a
@@ -366,7 +370,7 @@ export default function Home() {
                     GitHub
                   </a>
                   <a
-                    href="https://jeuchi.github.io/traffic-watch/"
+                    href="https://jeuchi.github.io/traffic-watch/#/report"
                     target="_blank"
                     className="btn btn-secondary"
                   >
