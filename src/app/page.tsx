@@ -2,6 +2,8 @@ import Image from "next/image";
 import ProfileImg from "../../public/profile.jpg";
 import Khet from "./assets/khet.png";
 import TrafficWatch from "./assets/traffic-watch.png";
+import BikeWorkshop from "./assets/bike-workshop.png";
+import Tennis from "./assets/tennis.png";
 
 export default function Home() {
   return (
@@ -116,10 +118,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          id="experience"
-          className="hero min-h-screen scroll-mt-16 lg:scroll-mt-0"
-        >
+        <div id="experience" className="hero min-h-screen">
           <div className="hero-content flex-col">
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold">
               Experience
@@ -282,18 +281,33 @@ export default function Home() {
                 role="tabpanel"
                 className="tab-content bg-base-100 border-base-300 rounded-box p-6 w-full"
               >
+                <div className="badge badge-success gap-1 mb-4">
+                  <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="27"
+                    fill="currentColor"
+                    viewBox="0 0 24 27"
+                  >
+                    <path d="m6 10.5237-2.27075.6386C3.29797 11.2836 3 11.677 3 12.125V20c0 .5523.44772 1 1 1h2V10.5237Zm12 0 2.2707.6386c.4313.1213.7293.5147.7293.9627V20c0 .5523-.4477 1-1 1h-2V10.5237Z" />
+                    <path d="M12.5547 3.16795c-.3359-.22393-.7735-.22393-1.1094 0l-6.00002 4c-.45952.30635-.5837.92722-.27735 1.38675.30636.45953.92723.5837 1.38675.27735L8 7.86853V21h8V7.86853l1.4453.96352c.0143.00957.0289.01873.0435.02746.1597.09514.3364.14076.5112.1406.3228-.0003.6395-.15664.832-.44541.3064-.45953.1822-1.0804-.2773-1.38675l-6-4ZM10 12c0-.5523.4477-1 1-1h2c.5523 0 1 .4477 1 1s-.4477 1-1 1h-2c-.5523 0-1-.4477-1-1Zm1-4c-.5523 0-1 .44772-1 1s.4477 1 1 1h2c.5523 0 1-.44772 1-1s-.4477-1-1-1h-2Z" />
+                  </svg>
+                  UCLA Fall 2024
+                </div>
                 <Image
                   src={Khet}
                   alt="Khet"
                   priority={true}
-                  className="justify-self-center pb-6 w-[300px] h-[230px] sm:w-[750px] sm:h-[500px]"
+                  className="justify-self-center pb-6 w-[730px] h-[230px] sm:w-[1000px] sm:h-[500px]"
                 />
 
                 <div className="flex flex-row gap-2">
                   <a
                     href="https://github.com/jeuchi/khet"
                     target="_blank"
-                    className="btn btn-primary"
+                    className="btn btn-neutral"
                   >
                     <svg
                       className="w-6 h-6 text-gray-800 dark:text-white"
@@ -339,12 +353,165 @@ export default function Home() {
                 name="my_tabs_2"
                 role="tab"
                 className="tab"
+                aria-label="BikeWorkshop"
+              />
+              <div
+                role="tabpanel"
+                className="tab-content bg-base-100 border-base-300 rounded-box p-6 w-full"
+              >
+                <div className="badge badge-success gap-1 mb-4">
+                  <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="27"
+                    fill="currentColor"
+                    viewBox="0 0 24 27"
+                  >
+                    <path d="m6 10.5237-2.27075.6386C3.29797 11.2836 3 11.677 3 12.125V20c0 .5523.44772 1 1 1h2V10.5237Zm12 0 2.2707.6386c.4313.1213.7293.5147.7293.9627V20c0 .5523-.4477 1-1 1h-2V10.5237Z" />
+                    <path d="M12.5547 3.16795c-.3359-.22393-.7735-.22393-1.1094 0l-6.00002 4c-.45952.30635-.5837.92722-.27735 1.38675.30636.45953.92723.5837 1.38675.27735L8 7.86853V21h8V7.86853l1.4453.96352c.0143.00957.0289.01873.0435.02746.1597.09514.3364.14076.5112.1406.3228-.0003.6395-.15664.832-.44541.3064-.45953.1822-1.0804-.2773-1.38675l-6-4ZM10 12c0-.5523.4477-1 1-1h2c.5523 0 1 .4477 1 1s-.4477 1-1 1h-2c-.5523 0-1-.4477-1-1Zm1-4c-.5523 0-1 .44772-1 1s.4477 1 1 1h2c.5523 0 1-.44772 1-1s-.4477-1-1-1h-2Z" />
+                  </svg>
+                  UCLA Fall 2024
+                </div>
+                <Image
+                  src={BikeWorkshop}
+                  alt="BikeWorkshop"
+                  className="justify-self-center pb-6 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px]"
+                />
+                <div className="flex flex-row gap-2">
+                  <a
+                    href="https://github.com/jeuchi/bike-workshop"
+                    target="_blank"
+                    className="btn btn-neutral"
+                  >
+                    <svg
+                      className="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" />
+                    </svg>
+                    GitHub
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=i-FA4TJdA8w"
+                    target="_blank"
+                    className="btn btn-error"
+                  >
+                    <svg
+                      className="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" />
+                    </svg>
+                    YouTube
+                  </a>
+                </div>
+                <p className="py-6">
+                  Using Unity and Meta Quest VR, our team created a virtual
+                  reality simulation of a bike workshop where users can learn
+                  how to fix a bike. The user can interact with the environment
+                  and tools to learn how to fix a bike.
+                </p>
+              </div>
+
+              <input
+                type="radio"
+                name="my_tabs_2"
+                role="tab"
+                className="tab"
+                aria-label="Tennis"
+              />
+              <div
+                role="tabpanel"
+                className="tab-content bg-base-100 border-base-300 rounded-box p-6 w-full"
+              >
+                <div className="badge badge-success gap-1 mb-4">
+                  <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="27"
+                    fill="currentColor"
+                    viewBox="0 0 24 27"
+                  >
+                    <path d="m6 10.5237-2.27075.6386C3.29797 11.2836 3 11.677 3 12.125V20c0 .5523.44772 1 1 1h2V10.5237Zm12 0 2.2707.6386c.4313.1213.7293.5147.7293.9627V20c0 .5523-.4477 1-1 1h-2V10.5237Z" />
+                    <path d="M12.5547 3.16795c-.3359-.22393-.7735-.22393-1.1094 0l-6.00002 4c-.45952.30635-.5837.92722-.27735 1.38675.30636.45953.92723.5837 1.38675.27735L8 7.86853V21h8V7.86853l1.4453.96352c.0143.00957.0289.01873.0435.02746.1597.09514.3364.14076.5112.1406.3228-.0003.6395-.15664.832-.44541.3064-.45953.1822-1.0804-.2773-1.38675l-6-4ZM10 12c0-.5523.4477-1 1-1h2c.5523 0 1 .4477 1 1s-.4477 1-1 1h-2c-.5523 0-1-.4477-1-1Zm1-4c-.5523 0-1 .44772-1 1s.4477 1 1 1h2c.5523 0 1-.44772 1-1s-.4477-1-1-1h-2Z" />
+                  </svg>
+                  UCLA Fall 2024
+                </div>
+                <Image
+                  src={Tennis}
+                  alt="Tennis"
+                  className="justify-self-center pb-6 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px]"
+                />
+                <div className="flex flex-row gap-2">
+                  <a
+                    href="https://github.com/jeuchi/bake-off"
+                    target="_blank"
+                    className="btn btn-neutral"
+                  >
+                    <svg
+                      className="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+                <p className="py-6">
+                  Our group put together a circuit that uses a piezoelectric
+                  sensor attached to the base of a tennis racket. A ball
+                  striking the rim or netting of the racket is detected by the
+                  sensor, and the data is collected to train a machine learning
+                  model to classify the type of shot.
+                </p>
+              </div>
+
+              <input
+                type="radio"
+                name="my_tabs_2"
+                role="tab"
+                className="tab"
                 aria-label="TrafficWatch"
               />
               <div
                 role="tabpanel"
                 className="tab-content bg-base-100 border-base-300 rounded-box p-6 w-full"
               >
+                <div className="badge badge-success gap-1 mb-4">
+                  <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="27"
+                    fill="currentColor"
+                    viewBox="0 0 24 27"
+                  >
+                    <path d="m6 10.5237-2.27075.6386C3.29797 11.2836 3 11.677 3 12.125V20c0 .5523.44772 1 1 1h2V10.5237Zm12 0 2.2707.6386c.4313.1213.7293.5147.7293.9627V20c0 .5523-.4477 1-1 1h-2V10.5237Z" />
+                    <path d="M12.5547 3.16795c-.3359-.22393-.7735-.22393-1.1094 0l-6.00002 4c-.45952.30635-.5837.92722-.27735 1.38675.30636.45953.92723.5837 1.38675.27735L8 7.86853V21h8V7.86853l1.4453.96352c.0143.00957.0289.01873.0435.02746.1597.09514.3364.14076.5112.1406.3228-.0003.6395-.15664.832-.44541.3064-.45953.1822-1.0804-.2773-1.38675l-6-4ZM10 12c0-.5523.4477-1 1-1h2c.5523 0 1 .4477 1 1s-.4477 1-1 1h-2c-.5523 0-1-.4477-1-1Zm1-4c-.5523 0-1 .44772-1 1s.4477 1 1 1h2c.5523 0 1-.44772 1-1s-.4477-1-1-1h-2Z" />
+                  </svg>
+                  UCLA Fall 2023
+                </div>
+
                 <Image
                   src={TrafficWatch}
                   alt="TrafficWatch"
@@ -354,7 +521,7 @@ export default function Home() {
                   <a
                     href="https://github.com/jeuchi/traffic-watch"
                     target="_blank"
-                    className="btn btn-primary"
+                    className="btn btn-neutral"
                   >
                     <svg
                       className="w-6 h-6 text-gray-800 dark:text-white"
@@ -391,10 +558,10 @@ export default function Home() {
                 <p className="py-6">
                   For the embedded systems class, my project was to collect
                   sensor data and train AI to learn what constitutes bad driving
-                  behaviors such as running a red light and classify cars in
-                  video captured by cameras at an intersection. I also had
-                  training to find car key points and training to recognize
-                  actions such as swerving or collision.
+                  using cameras at an intersection. As a prerequisite, there was
+                  a separate AI model trained to find car key points which fed
+                  into an LSTM model to recognize actions such as swerving or
+                  collision.
                 </p>
               </div>
             </div>
